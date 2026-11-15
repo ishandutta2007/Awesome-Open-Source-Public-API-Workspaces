@@ -1,108 +1,142 @@
-# Awesome-Open-Source-Public-API-Workspaces
+# Awesome Open Source & Public API Workspaces [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-# Awesome Open Source & Public API Workspaces
+> A curated list of top Open Source and Public API Workspace platforms — featuring SaaS & hosted commercial hubs, developer portals, API testing clients, and self-hosted open-source alternatives for publishing, discovering, testing, and collaborating on APIs and developer ecosystems.
 
-> A curated list of top Open Source and Public API Workspace platforms — both SaaS/Hosted commercial hubs and open-source alternatives for publishing, discovering, and collaborating on APIs, repositories, and community projects.
-> 🌟 Star this repo if you find it useful! 🌟
+[![Track Awesome List](https://img.shields.io/badge/Track-Awesome--List-blue.svg?style=flat-square)](https://github.com/ishandutta2007/Awesome-Open-Source-Public-API-Workspaces)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg?style=flat-square)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 ---
 
 ## 📋 Table of Contents
 
+- [Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
 - [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [Postman API Network](#postman-api-network)
-  - [GitHub Organizations](#github-organizations)
-  - [GitLab Public Groups](#gitlab-public-groups)
-  - [Hugging Face Hub](#hugging-face-hub)
 - [Open-Source Software](#-open-source-software)
-  - [Forgejo (Codeberg)](#forgejo-codeberg)
-  - [Open Source Collective](#open-source-collective)
-  - [Docker Hub (Public Repositories)](#docker-hub-public-repositories)
 - [Comparison at a Glance](#-comparison-at-a-glance)
 - [Contributing](#-contributing)
+- [License](#-license)
+
+---
+
+## 📈 Sector Overview & Market Dynamics
+
+The global API management and developer platform market is estimated between **$8.8 billion and $10.5 billion**, rapidly compounding at a 16% to 34% CAGR driven by enterprise cloud migrations, API-first architecture, and AI/agentic integration. The sector is **moderately fragmented**: hyper-scale infrastructure and code hosting exhibit concentrated oligopolies with high switching costs (e.g., Microsoft GitHub, GitLab), while the API testing, developer workspace, and portal layer remains highly fragmented with intense competition between dedicated SaaS vendors and extensible open-source developer platforms.
 
 ---
 
 ## 🟦 SaaS / Hosted Platforms
 
-Commercial, cloud-hosted Open Source and Public API Workspace platforms. These are not open-source but are included as reference points for feature comparison.
+Commercial, cloud-hosted Open Source and Public API Workspace platforms. These are not open-source but represent benchmark developer hubs for API publishing, discovery, and collaboration. Ranked by company valuation and scale (descending).
 
-### Postman API Network
-**Type:** Public workspace hub for API discovery and collaboration
-The Postman API Network is the unified platform for API publishers to share public workspaces, collections, APIs, and flows with a global community of developers [citation:2]. Publishers create a public workspace to make their API instantly accessible, with benefits including organic discovery in Postman search results, metrics on usage and response code breakdowns, and a customizable team profile [citation:2][citation:1]. Consumers can search and browse public workspaces, fork collections, and build on published APIs within their own workspaces [citation:2][citation:11]. Verified Publisher badges signify authoritative domain ownership and high-quality documentation [citation:1]. **Limitations:** The workspace itself is hosted entirely on Postman's infrastructure; you cannot self-host the API Network or export the full discovery experience.
-**Best for:** API publishers wanting to reach Postman's massive developer community with a low-friction onboarding path, accepting that the workspace lives on Postman's platform.
-
-### GitHub Organizations
-**Type:** Public organization profiles with repositories and README
-GitHub Organizations provide a public profile page that can be customized with a README and up to six pinned repositories, visible to anyone who is not a member of the organization [citation:3]. The public README is stored in a public `.github` repository under `profile/README.md` and supports GitHub Flavored Markdown with emoji, images, and GIFs [citation:3]. Organization owners can choose between a public view and a member-only view, with the member view defaulting when members-only content exists [citation:3]. This makes the organization profile a de facto public workspace for discovering an organization's code, documentation, and community guidance.
-**Best for:** Open-source projects and companies wanting a customizable public landing page for their repositories, with the largest developer audience in the world.
-
-### GitLab Public Groups
-**Type:** Public group visibility with nested projects
-GitLab supports public groups where any user, including unauthenticated users, can view the group's projects and subgroups [citation:4]. Public groups can contain public, internal, or private subgroups and projects, giving organizations flexible visibility control across their hierarchy [citation:4]. A public access directory (`/public`) lists public projects for exploration [citation:4]. Group owners can change visibility for all projects in a group, though restrictions apply—you cannot set a group to private if a project or subgroup within it is public [citation:4]. Administrators can restrict which visibility levels users can choose to prevent accidental exposure [citation:4].
-**Best for:** Organizations already on GitLab wanting public discovery of their projects with hierarchical visibility controls.
-
-### Hugging Face Hub
-**Type:** Public repository hub for models, datasets, and spaces
-Hugging Face Hub hosts public repositories for machine learning models, datasets, and interactive Spaces, with organizations and community accounts managing their published assets [citation:5]. The `hf` CLI provides commands for managing repositories, including creating and listing tags for models, datasets, and Spaces, with revision-specific tagging [citation:14]. Repositories can be public or private, with public repositories discoverable and usable by the broader ML community. **Limitation:** The Hub is focused specifically on ML assets rather than general-purpose API workspaces.
-**Best for:** ML teams wanting to publish models, datasets, and demos to a specialized community, accepting the ML-specific scope.
+| Platform | Company Valuation / Revenue | Starting Paid Tier Price | Free Tier Limit | Primary Capabilities & Best For |
+|:---|:---|:---|:---|:---|
+| **[GitHub Organizations](https://github.com)** | **$7.5B+ acquisition valuation** (Wholly-owned subsidiary of Microsoft; ~$3.2T market cap; GitHub ARR >$1B+) | **$4/user/month** (Team plan) | **Free forever**: Unlimited public/private repos, unlimited collaborators, 2,000 GitHub Actions CI/CD mins/month, 500 MB GitHub Packages storage, automated security alerts & Dependabot | Public profile READMEs, organizational code hosting, social discovery, and global developer reach |
+| **[GitLab Public Groups](https://gitlab.com)** | **~$7.8B public market cap** (NASDAQ: GTLB; ~$1.06B TTM revenue) | **$29/user/month** (Premium plan, billed annually) | **Free forever**: Cap of 5 users per top-level private group (unlimited users on public groups), 400 CI/CD compute minutes/month, 10 GiB storage/project, 5,000 API requests/hour | Hierarchical public groups, nested project visibility, built-in CI/CD pipelines, and unified DevSecOps |
+| **[Postman API Network](https://www.postman.com)** | **$5.6B private valuation** (~$170M–$310M estimated ARR) | **$19/user/month** (Team plan, billed annually) or **$9/month** (Solo plan) | **Free forever**: Strictly limited to 1 user (no team workspace collaboration); includes unlimited collection runs & mock server calls, 10,000 Postman API requests/month, 5 integrations, and 50 monthly AI credits | Dedicated public API discovery network, interactive collection forks, API documentation, and testing workspaces |
+| **[Hugging Face Hub](https://huggingface.co)** | **$4.5B valuation** (Acquisition agreement up to $12.9B; ~$150M ARR) | **$9/month** (PRO plan) | **Free forever**: Unlimited public model/dataset repositories, up to 100 GB private storage, ~3.5 min/day ZeroGPU community compute, ~1,000 API requests/5 mins, community model hosting | Specialized public hub for machine learning models, datasets, spaces, and AI-driven API endpoints |
 
 ---
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-driven Open Source and Public API Workspace tools. The open-source ecosystem spans **self-hostable Git forges**, **fiscal hosting for open-source projects**, and **container registries with public visibility**.
+Self-hosted, community-driven Open Source and Public API Workspace tools, developer portals, and collaborative API platforms. Sorted by GitHub / repository star count (descending).
 
-### Forgejo (Codeberg)
-**Stack:** Go | **License:** GPL-3.0 (Forgejo)
-Forgejo is a self-hosted, lightweight Git forge that powers Codeberg, a community-led open-source alternative to GitHub [citation:7][citation:10]. Codeberg currently hosts approximately **161,000 repositories, 157,000 users, and 11,000 organizations** [citation:7]. Forgejo provides the core Git forge features familiar to GitHub/GitLab users: repository management, organizations, wikis, issue tracking, pull requests, and CI/CD via Forgejo Actions with GitHub Actions-compatible syntax [citation:10]. It also includes Pages for static site hosting and a package registry including container images [citation:10]. **Key advantage:** You can self-host Forgejo on your own infrastructure, giving you full control over your public workspace without depending on a commercial provider.
-**Best for:** Organizations and communities wanting a self-hosted GitHub-like public workspace with full data sovereignty, particularly those in the European open-source ecosystem.
+### [Hoppscotch](https://hoppscotch.com) [![GitHub Stars](https://img.shields.io/github/stars/hoppscotch/hoppscotch?style=social&color=white)](https://github.com/hoppscotch/hoppscotch/stargazers)
+- **Repository:** [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch)
+- **Stack:** Vue.js, TypeScript, Node.js | **License:** MIT
+- **Overview:** An open-source, lightweight, and fast API development ecosystem and web workspace. Built from the ground up as a transparent alternative to Postman, Hoppscotch supports REST, GraphQL, and WebSocket protocols with team workspaces, environment management, and self-hosted deployments.
 
-### Open Source Collective
-**Stack:** Open Collective platform (web-based) | **License:** Non-profit fiscal host
-Open Source Collective (OSC) is a US-registered 501(c)(6) nonprofit that provides **fiscal hosting** for open-source projects, letting them receive and manage funding without forming their own legal entity [citation:6]. OSC handles fund management, contribution processing via PayPal and Stripe, payment processing to maintainers worldwide, tax and legal compliance, and legal contract review on behalf of hosted projects [citation:6]. The Open Collective platform provides a **public financial ledger** where anyone can see where money comes from and how it is spent, with real-time tracking and reporting [citation:6]. **Important note:** Donations to OSC-hosted projects are not tax-deductible because OSC is a 501(c)(6), not a 501(c)(3) charity [citation:6].
-**Best for:** Open-source projects wanting transparent, community-visible funding without the overhead of forming a legal entity, accepting the non-profit fiscal host model.
+### [Kong](https://konghq.com) [![GitHub Stars](https://img.shields.io/github/stars/Kong/kong?style=social&color=white)](https://github.com/Kong/kong/stargazers)
+- **Repository:** [Kong/kong](https://github.com/Kong/kong)
+- **Stack:** Lua, OpenResty, Nginx, C | **License:** Apache-2.0
+- **Overview:** The world's most popular open-source cloud-native API gateway and platform service broker. Kong acts as the high-performance runtime engine connecting public workspaces, microservices, and developer portals with traffic control, rate-limiting, authentication, and plugin extensibility.
 
-### Docker Hub (Public Repositories)
-**Stack:** Docker registry | **License:** Proprietary (hosted service)
-Docker Hub provides public repositories that appear in search results and can be pulled by everyone [citation:8]. Organization repositories can use roles, teams, and organization access tokens to manage push access, while public visibility ensures discoverability [citation:8]. **Gated distribution** allows publishers to share private container images with external customers or partners without giving them full organization access, with distributor members having pull-only access to assigned repositories [citation:8]. While Docker Hub itself is a proprietary hosted service, the public repository model functions as a public workspace for container images.
-**Best for:** Teams wanting to publish container images publicly with controlled push access and optional gated distribution for commercial partners.
+### [Directus](https://directus.io) [![GitHub Stars](https://img.shields.io/github/stars/directus/directus?style=social&color=white)](https://github.com/directus/directus/stargazers)
+- **Repository:** [directus/directus](https://github.com/directus/directus)
+- **Stack:** TypeScript, Node.js, Vue.js | **License:** BSL-1.1 / GPL-3.0
+- **Overview:** An open-source data engine and instant API backend that wraps any SQL database with real-time GraphQL and REST APIs alongside an intuitive no-code data studio and collaborative workspace.
+
+### [Backstage](https://backstage.io) [![GitHub Stars](https://img.shields.io/github/stars/backstage/backstage?style=social&color=white)](https://github.com/backstage/backstage/stargazers)
+- **Repository:** [backstage/backstage](https://github.com/backstage/backstage)
+- **Stack:** TypeScript, React, Node.js | **License:** Apache-2.0
+- **Overview:** An open platform for building developer portals created by Spotify and donated to the CNCF. Backstage unifies software catalogs, API documentation, templates, and service metadata into a centralized developer portal and collaborative organization hub.
+
+### [Swagger UI](https://swagger.io/tools/swagger-ui/) [![GitHub Stars](https://img.shields.io/github/stars/swagger-api/swagger-ui?style=social&color=white)](https://github.com/swagger-api/swagger-ui/stargazers)
+- **Repository:** [swagger-api/swagger-ui](https://github.com/swagger-api/swagger-ui)
+- **Stack:** JavaScript, React | **License:** Apache-2.0
+- **Overview:** The ubiquitous open-source API documentation and exploration interface for OpenAPI (Swagger) specifications. Swagger UI generates interactive public documentation that allows developers to test endpoints directly from the browser.
+
+### [Bruno](https://www.usebruno.com) [![GitHub Stars](https://img.shields.io/github/stars/usebruno/bruno?style=social&color=white)](https://github.com/usebruno/bruno/stargazers)
+- **Repository:** [usebruno/bruno](https://github.com/usebruno/bruno)
+- **Stack:** JavaScript, Electron, React | **License:** MIT
+- **Overview:** An open-source, offline-first, git-friendly API client and workspace. Bruno stores API collections directly as plain text files in a folder on your filesystem, allowing teams to use Git for collaboration, version control, and public workspace sharing without cloud lock-in.
+
+### [Yaak](https://yaak.app) [![GitHub Stars](https://img.shields.io/github/stars/mountain-loop/yaak?style=social&color=white)](https://github.com/mountain-loop/yaak/stargazers)
+- **Repository:** [mountain-loop/yaak](https://github.com/mountain-loop/yaak)
+- **Stack:** Rust, Tauri, React, TypeScript | **License:** MIT
+- **Overview:** A desktop-first, open-source REST, GraphQL, and gRPC client built with Rust and Tauri. Offers fast workspace navigation, environment management, and native performance for testing and sharing API requests.
+
+### [Scalar](https://scalar.com) [![GitHub Stars](https://img.shields.io/github/stars/scalar/scalar?style=social&color=white)](https://github.com/scalar/scalar/stargazers)
+- **Repository:** [scalar/scalar](https://github.com/scalar/scalar)
+- **Stack:** Vue.js, TypeScript | **License:** MIT
+- **Overview:** Modern, open-source interactive API documentation, client, and developer portal generator for OpenAPI/Swagger specs. Provides beautiful public API references with an embedded interactive test client.
+
+### [Docker Distribution (Registry)](https://github.com/distribution/distribution) [![GitHub Stars](https://img.shields.io/github/stars/distribution/distribution?style=social&color=white)](https://github.com/distribution/distribution/stargazers)
+- **Repository:** [distribution/distribution](https://github.com/distribution/distribution)
+- **Stack:** Go | **License:** Apache-2.0
+- **Overview:** The open-source OCI and container image registry implementation that powers Docker Hub and private registries worldwide. Provides the API and storage foundation for public container distribution and image discovery.
+
+### [Forgejo (Codeberg)](https://forgejo.org) [![Codeberg Stars](https://img.shields.io/gitea/stars/forgejo/forgejo?gitea_url=https%3A%2F%2Fcodeberg.org&logo=codeberg&style=social&color=white)](https://codeberg.org/forgejo/forgejo/stars)
+- **Repository:** [forgejo/forgejo](https://codeberg.org/forgejo/forgejo)
+- **Stack:** Go | **License:** GPL-3.0
+- **Overview:** A community-governed, lightweight self-hosted Git forge that powers Codeberg. Provides full organization workspaces, repository hosting, issue tracking, container package registries, and Forgejo Actions CI/CD with complete data sovereignty.
+
+### [Open Source Collective](https://opencollective.com/opensource) [![GitHub Stars](https://img.shields.io/github/stars/opencollective/opencollective?style=social&color=white)](https://github.com/opencollective/opencollective/stargazers)
+- **Repository:** [opencollective/opencollective](https://github.com/opencollective/opencollective)
+- **Stack:** JavaScript, TypeScript, Next.js, GraphQL | **License:** MIT
+- **Overview:** A transparent platform providing fiscal hosting, open financial accounting, and community governance for open-source initiatives, giving developer projects a public workspace for budgets, expenses, and contributor funding.
 
 ---
 
 ## 📊 Comparison at a Glance
 
-| Software | License | Stack | Public Discovery | Self-Hosted | Best For |
-|----------|---------|-------|------------------|-------------|----------|
-| **Postman API Network** | Proprietary | Cloud | ✅ API workspaces | ❌ | API publisher community |
-| **GitHub Organizations** | Proprietary | Cloud | ✅ Repos + README | ❌ | Open-source project landing pages |
-| **GitLab Public Groups** | Proprietary | Cloud/Self-managed | ✅ Nested projects | (Self-managed) | GitLab-centric organizations |
-| **Hugging Face Hub** | Proprietary | Cloud | ✅ ML models/datasets | ❌ | ML asset publishing |
-| **Forgejo (Codeberg)** | GPL-3.0 | Go | ✅ Full Git forge | ✅ | Self-hosted GitHub alternative |
-| **Open Source Collective** | Non-profit | Web | ✅ Public ledger | ❌ | Transparent project funding |
-| **Docker Hub** | Proprietary | Cloud | ✅ Container images | ❌ | Public container images |
+| Platform / Tool | Type | License | Self-Hostable | Primary Focus | Best For |
+|:---|:---|:---|:---:|:---|:---|
+| **GitHub Organizations** | SaaS Hub | Proprietary | ❌ | Code & project collaboration | Open-source project landing pages & source code |
+| **GitLab Public Groups** | SaaS / Self-Managed | Proprietary | ✅ | DevSecOps & repositories | Organizations needing hierarchical project visibility |
+| **Postman API Network** | SaaS Hub | Proprietary | ❌ | API collections & workflows | API consumers and commercial API publishers |
+| **Hugging Face Hub** | SaaS Hub | Proprietary | ❌ | ML models, datasets & Spaces | AI/ML model publishing & interactive demos |
+| **Hoppscotch** | Open Source | MIT | ✅ | Web-based API workspace | Collaborative API testing and cloud/self-hosted teams |
+| **Kong** | Open Source | Apache-2.0 | ✅ | API gateway & service mesh | Enterprise API traffic routing and service control |
+| **Directus** | Open Source | BSL-1.1 / GPL-3.0 | ✅ | Database-driven API workspace | Instant REST/GraphQL APIs and data collaboration |
+| **Backstage** | Open Source | Apache-2.0 | ✅ | Developer portal & catalog | Enterprise internal and public developer portals |
+| **Swagger UI** | Open Source | Apache-2.0 | ✅ | OpenAPI documentation | Interactive browser-based API testing & docs |
+| **Bruno** | Open Source | MIT | ✅ | Git-native local API client | Developers wanting version-controlled collections via Git |
+| **Yaak** | Open Source | MIT | ✅ | Fast desktop REST/gRPC client | Lightweight, native desktop API exploration |
+| **Scalar** | Open Source | MIT | ✅ | Modern API reference & docs | Beautiful interactive OpenAPI documentation sites |
+| **Docker Distribution** | Open Source | Apache-2.0 | ✅ | Container image registry | Self-hosted artifact and image repository workspaces |
+| **Forgejo** | Open Source | GPL-3.0 | ✅ | Sovereign Git forge | Self-hosted community organization and repository hubs |
+| **Open Source Collective** | Open Source | MIT | ✅ | Fiscal hosting & public ledger | Transparent open-source funding and financial management |
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you know of an open-source Open Source or Public API Workspace tool that should be listed here, please open a pull request with:
+Contributions are welcome! If you know of an awesome open-source API workspace, developer portal, or public collaboration tool:
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
-
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source.
-
-**Note on the ecosystem:** Public workspaces split across several distinct models. **Postman API Network** is purpose-built for API discovery and collaboration, with the largest API-focused audience [citation:2]. **GitHub Organizations** and **GitLab Public Groups** serve general-purpose code hosting with customizable public profiles [citation:3][citation:4]. **Forgejo** is the leading self-hostable alternative, powering Codeberg's community-led platform with over 161k repositories [citation:7]. **Open Source Collective** addresses a different need entirely—transparent fiscal hosting for open-source projects rather than code hosting [citation:6]. No single open-source project replicates Postman's API Network experience, but Forgejo provides the closest self-hosted equivalent for general public workspace needs.
+1. Fork this repository.
+2. Create a new branch (`git checkout -b feature/new-tool`).
+3. Add the project with details, badges, stack, and direct repository links.
+4. Ensure entries are sorted appropriately by stars or company scale.
+5. Open a Pull Request.
 
 ---
 
 ## 📄 License
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
+This collection is published under the [Creative Commons Zero v1.0 Universal](LICENSE) (CC0 1.0) Public Domain Dedication. Individual software projects retain their respective proprietary or open-source licenses.
 
 ---
 
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+⭐ **Found this guide helpful? Give it a star to support open-source developer tooling!** ⭐
