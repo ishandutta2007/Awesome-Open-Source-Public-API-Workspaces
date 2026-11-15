@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
+    </linearGradient>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.8" stroke-opacity="0.25" />
+    </pattern>
+
+    <!-- Pulsing and Floating Animations -->
+    <style>
+      @keyframes floatSlow {
+        0% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-12px) rotate(1.5deg); }
+        100% { transform: translateY(0px) rotate(0deg); }
+      }
+      @keyframes floatFast {
+        0% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-16px) rotate(-2deg); }
+        100% { transform: translateY(0px) rotate(0deg); }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.65; transform: scale(1.08); }
+      }
+      @keyframes flowLine {
+        0% { stroke-dashoffset: 400; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes particleFloat {
+        0% { transform: translate(0, 0); opacity: 0.2; }
+        50% { transform: translate(20px, -25px); opacity: 0.8; }
+        100% { transform: translate(40px, -50px); opacity: 0.1; }
+      }
+      .glow1 { animation: pulseGlow 6s ease-in-out infinite; transform-origin: 200px 100px; }
+      .glow2 { animation: pulseGlow 8s ease-in-out infinite alternate; transform-origin: 1000px 250px; }
+      .flow-path { stroke-dasharray: 12, 12; animation: flowLine 14s linear infinite; }
+      .floating-card1 { animation: floatSlow 7s ease-in-out infinite; }
+      .floating-card2 { animation: floatFast 6s ease-in-out infinite 1s; }
+      .floating-card3 { animation: floatSlow 8s ease-in-out infinite 2s; }
+      .particle { animation: particleFloat 5s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Deep Canvas Background -->
+  <rect width="1200" height="360" fill="url(#bgGrad)" rx="16" />
+  <rect width="1200" height="360" fill="url(#grid)" rx="16" />
+
+  <!-- Dynamic Glowing Orbs in Background -->
+  <circle class="glow1" cx="220" cy="110" r="180" fill="url(#glowGrad1)" filter="blur(40px)" />
+  <circle class="glow2" cx="980" cy="220" r="200" fill="url(#glowGrad2)" filter="blur(45px)" />
+
+  <!-- Animated Circuit & Data Flow Lines (Background) -->
+  <g opacity="0.35">
+    <path class="flow-path" d="M 50,80 Q 300,40 600,120 T 1150,90" fill="none" stroke="#38bdf8" stroke-width="1.8" />
+    <path class="flow-path" d="M 50,300 Q 400,260 750,320 T 1150,270" fill="none" stroke="#818cf8" stroke-width="1.8" style="animation-direction: reverse;" />
+    <path class="flow-path" d="M 100,200 C 350,340 850,20 1100,180" fill="none" stroke="#a855f7" stroke-width="1.5" />
+  </g>
+
+  <!-- Animated Floating Sub-pills (Visual Background Accents) -->
+  <g class="floating-card1" opacity="0.45">
+    <rect x="80" y="42" width="130" height="32" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="1" />
+    <text x="145" y="63" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">⚡ REST / GraphQL</text>
+  </g>
+
+  <g class="floating-card2" opacity="0.45">
+    <rect x="990" y="48" width="135" height="32" rx="16" fill="#1e293b" stroke="#818cf8" stroke-width="1" />
+    <text x="1057" y="69" fill="#818cf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">🌐 Developer Portals</text>
+  </g>
+
+  <g class="floating-card3" opacity="0.45">
+    <rect x="1010" y="278" width="125" height="32" rx="16" fill="#1e293b" stroke="#c084fc" stroke-width="1" />
+    <text x="1072" y="299" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">🔓 Open Source</text>
+  </g>
+
+  <g class="floating-card1" opacity="0.4">
+    <rect x="70" y="280" width="140" height="32" rx="16" fill="#1e293b" stroke="#34d399" stroke-width="1" />
+    <text x="140" y="301" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">🚀 CI/CD &amp; Testing</text>
+  </g>
+
+  <!-- Foreground Title Card / Badges Container -->
+  <!-- Top Category Tag -->
+  <g>
+    <rect x="445" y="42" width="310" height="32" rx="16" fill="#0f172a" stroke="#475569" stroke-width="1.2" />
+    <circle cx="463" cy="58" r="4" fill="#38bdf8" />
+    <text x="605" y="63" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" letter-spacing="1.5" text-anchor="middle">CURATED AWESOME ECOSYSTEM</text>
+  </g>
+
+  <!-- Prominent Foreground Title (Crisp, High Contrast, Guaranteed Foreground) -->
+  <g>
+    <text x="600" y="142" fill="url(#titleGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="800" text-anchor="middle" letter-spacing="-0.5">
+      Open Source &amp; Public API Workspaces
+    </text>
+    <text x="600" y="184" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" letter-spacing="0.2">
+      Hosted SaaS Hubs • Self-Hosted Git Forges • API Portals • Testing Suites
+    </text>
+  </g>
+
+  <!-- Central Dynamic Badges / Metric Pills in Foreground -->
+  <g transform="translate(255, 222)">
+    <!-- Pill 1: SaaS Hubs -->
+    <g transform="translate(0, 0)">
+      <rect width="210" height="42" rx="10" fill="#1e293b" fill-opacity="0.9" stroke="#38bdf8" stroke-width="1.2" />
+      <text x="105" y="26" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle">🏢 Enterprise SaaS Hubs</text>
+    </g>
+
+    <!-- Pill 2: Open Source Tools -->
+    <g transform="translate(240, 0)">
+      <rect width="210" height="42" rx="10" fill="#1e293b" fill-opacity="0.9" stroke="#818cf8" stroke-width="1.2" />
+      <text x="105" y="26" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle">⭐ Top OSS Workspaces</text>
+    </g>
+
+    <!-- Pill 3: Self-Hostable Sovereign -->
+    <g transform="translate(480, 0)">
+      <rect width="210" height="42" rx="10" fill="#1e293b" fill-opacity="0.9" stroke="#c084fc" stroke-width="1.2" />
+      <text x="105" y="26" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle">🛡️ 100% Self-Hostable</text>
+    </g>
+  </g>
+
+  <!-- Bottom Interactive / Subtext -->
+  <text x="600" y="316" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" text-anchor="middle">
+    Designed for Developers, API Architects, Platform Engineers &amp; Open Source Maintainers
+  </text>
+</svg>
