@@ -56,49 +56,49 @@ Commercial, cloud-hosted Open Source and Public API Workspace platforms. These a
 
 ## 🟩 Open-Source Software 🔓
 
-Self-hosted, community-driven Open Source and Public API Workspace tools, developer portals, and collaborative API platforms. Sorted by GitHub / repository star count (descending). 🌟⚡
+Self-hosted, community-driven Open Source and Public API Workspace tools, developer portals, and collaborative API platforms. Sorted by GitHub / repository Stars_Count (descending). 🌟⚡
 
-### ⚡ [Hoppscotch](https://hoppscotch.com) [![GitHub Stars](https://img.shields.io/github/stars/hoppscotch/hoppscotch?style=social&color=white)](https://github.com/hoppscotch/hoppscotch/stargazers)
+### ⚡ [Hoppscotch](https://hoppscotch.com) [![GitHub_Stars](https://img.shields.io/github/stars/hoppscotch/hoppscotch?style=social&color=white)](https://github.com/hoppscotch/hoppscotch/stargazers)
 - **Repository:** [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) 📦
 - **Stack:** Vue.js, TypeScript, Node.js 💻 | **License:** MIT 📜
 - **Overview:** An open-source, lightweight, and fast API development ecosystem and web workspace. Built from the ground up as a transparent alternative to Postman, Hoppscotch supports REST, GraphQL, and WebSocket protocols with team workspaces, environment management, and self-hosted deployments. 🛸
 
-### 🦍 [Kong](https://konghq.com) [![GitHub Stars](https://img.shields.io/github/stars/Kong/kong?style=social&color=white)](https://github.com/Kong/kong/stargazers)
+### 🦍 [Kong](https://konghq.com) [![GitHub_Stars](https://img.shields.io/github/stars/Kong/kong?style=social&color=white)](https://github.com/Kong/kong/stargazers)
 - **Repository:** [Kong/kong](https://github.com/Kong/kong) 📦
 - **Stack:** Lua, OpenResty, Nginx, C 💻 | **License:** Apache-2.0 📜
 - **Overview:** The world's most popular open-source cloud-native API gateway and platform service broker. Kong acts as the high-performance runtime engine connecting public workspaces, microservices, and developer portals with traffic control, rate-limiting, authentication, and plugin extensibility. 🛡️
 
-### 🐰 [Directus](https://directus.io) [![GitHub Stars](https://img.shields.io/github/stars/directus/directus?style=social&color=white)](https://github.com/directus/directus/stargazers)
+### 🐰 [Directus](https://directus.io) [![GitHub_Stars](https://img.shields.io/github/stars/directus/directus?style=social&color=white)](https://github.com/directus/directus/stargazers)
 - **Repository:** [directus/directus](https://github.com/directus/directus) 📦
 - **Stack:** TypeScript, Node.js, Vue.js 💻 | **License:** BSL-1.1 / GPL-3.0 📜
 - **Overview:** An open-source data engine and instant API backend that wraps any SQL database with real-time GraphQL and REST APIs alongside an intuitive no-code data studio and collaborative workspace. 📊
 
-### 🎭 [Backstage](https://backstage.io) [![GitHub Stars](https://img.shields.io/github/stars/backstage/backstage?style=social&color=white)](https://github.com/backstage/backstage/stargazers)
+### 🎭 [Backstage](https://backstage.io) [![GitHub_Stars](https://img.shields.io/github/stars/backstage/backstage?style=social&color=white)](https://github.com/backstage/backstage/stargazers)
 - **Repository:** [backstage/backstage](https://github.com/backstage/backstage) 📦
 - **Stack:** TypeScript, React, Node.js 💻 | **License:** Apache-2.0 📜
 - **Overview:** An open platform for building developer portals created by Spotify and donated to the CNCF. Backstage unifies software catalogs, API documentation, templates, and service metadata into a centralized developer portal and collaborative organization hub. 🎧
 
-### 📜 [Swagger UI](https://swagger.io/tools/swagger-ui/) [![GitHub Stars](https://img.shields.io/github/stars/swagger-api/swagger-ui?style=social&color=white)](https://github.com/swagger-api/swagger-ui/stargazers)
+### 📜 [Swagger UI](https://swagger.io/tools/swagger-ui/) [![GitHub_Stars](https://img.shields.io/github/stars/swagger-api/swagger-ui?style=social&color=white)](https://github.com/swagger-api/swagger-ui/stargazers)
 - **Repository:** [swagger-api/swagger-ui](https://github.com/swagger-api/swagger-ui) 📦
 - **Stack:** JavaScript, React 💻 | **License:** Apache-2.0 📜
 - **Overview:** The ubiquitous open-source API documentation and exploration interface for OpenAPI (Swagger) specifications. Swagger UI generates interactive public documentation that allows developers to test endpoints directly from the browser. 🧪
 
-### 🐶 [Bruno](https://www.usebruno.com) [![GitHub Stars](https://img.shields.io/github/stars/usebruno/bruno?style=social&color=white)](https://github.com/usebruno/bruno/stargazers)
+### 🐶 [Bruno](https://www.usebruno.com) [![GitHub_Stars](https://img.shields.io/github/stars/usebruno/bruno?style=social&color=white)](https://github.com/usebruno/bruno/stargazers)
 - **Repository:** [usebruno/bruno](https://github.com/usebruno/bruno) 📦
 - **Stack:** JavaScript, Electron, React 💻 | **License:** MIT 📜
 - **Overview:** An open-source, offline-first, git-friendly API client and workspace. Bruno stores API collections directly as plain text files in a folder on your filesystem, allowing teams to use Git for collaboration, version control, and public workspace sharing without cloud lock-in. 📁
 
-### 🐂 [Yaak](https://yaak.app) [![GitHub Stars](https://img.shields.io/github/stars/mountain-loop/yaak?style=social&color=white)](https://github.com/mountain-loop/yaak/stargazers)
+### 🐂 [Yaak](https://yaak.app) [![GitHub_Stars](https://img.shields.io/github/stars/mountain-loop/yaak?style=social&color=white)](https://github.com/mountain-loop/yaak/stargazers)
 - **Repository:** [mountain-loop/yaak](https://github.com/mountain-loop/yaak) 📦
 - **Stack:** Rust, Tauri, React, TypeScript 💻 | **License:** MIT 📜
 - **Overview:** A desktop-first, open-source REST, GraphQL, and gRPC client built with Rust and Tauri. Offers fast workspace navigation, environment management, and native performance for testing and sharing API requests. ⚡
 
-### 📐 [Scalar](https://scalar.com) [![GitHub Stars](https://img.shields.io/github/stars/scalar/scalar?style=social&color=white)](https://github.com/scalar/scalar/stargazers)
+### 📐 [Scalar](https://scalar.com) [![GitHub_Stars](https://img.shields.io/github/stars/scalar/scalar?style=social&color=white)](https://github.com/scalar/scalar/stargazers)
 - **Repository:** [scalar/scalar](https://github.com/scalar/scalar) 📦
 - **Stack:** Vue.js, TypeScript 💻 | **License:** MIT 📜
 - **Overview:** Modern, open-source interactive API documentation, client, and developer portal generator for OpenAPI/Swagger specs. Provides beautiful public API references with an embedded interactive test client. 🎨
 
-### 🐳 [Docker Distribution (Registry)](https://github.com/distribution/distribution) [![GitHub Stars](https://img.shields.io/github/stars/distribution/distribution?style=social&color=white)](https://github.com/distribution/distribution/stargazers)
+### 🐳 [Docker Distribution (Registry)](https://github.com/distribution/distribution) [![GitHub_Stars](https://img.shields.io/github/stars/distribution/distribution?style=social&color=white)](https://github.com/distribution/distribution/stargazers)
 - **Repository:** [distribution/distribution](https://github.com/distribution/distribution) 📦
 - **Stack:** Go 💻 | **License:** Apache-2.0 📜
 - **Overview:** The open-source OCI and container image registry implementation that powers Docker Hub and private registries worldwide. Provides the API and storage foundation for public container distribution and image discovery. 📦
@@ -108,7 +108,7 @@ Self-hosted, community-driven Open Source and Public API Workspace tools, develo
 - **Stack:** Go 💻 | **License:** GPL-3.0 📜
 - **Overview:** A community-governed, lightweight self-hosted Git forge that powers Codeberg. Provides full organization workspaces, repository hosting, issue tracking, container package registries, and Forgejo Actions CI/CD with complete data sovereignty. 🛡️
 
-### 🤝 [Open Source Collective](https://opencollective.com/opensource) [![GitHub Stars](https://img.shields.io/github/stars/opencollective/opencollective?style=social&color=white)](https://github.com/opencollective/opencollective/stargazers)
+### 🤝 [Open Source Collective](https://opencollective.com/opensource) [![GitHub_Stars](https://img.shields.io/github/stars/opencollective/opencollective?style=social&color=white)](https://github.com/opencollective/opencollective/stargazers)
 - **Repository:** [opencollective/opencollective](https://github.com/opencollective/opencollective) 📦
 - **Stack:** JavaScript, TypeScript, Next.js, GraphQL 💻 | **License:** MIT 📜
 - **Overview:** A transparent platform providing fiscal hosting, open financial accounting, and community governance for open-source initiatives, giving developer projects a public workspace for budgets, expenses, and contributor funding. 💡
@@ -144,7 +144,7 @@ Contributions are welcome! If you know of an awesome open-source API workspace, 
 1. 🍴 Fork this repository.
 2. 🌿 Create a new branch (`git checkout -b feature/new-tool`).
 3. 📝 Add the project with details, badges, stack, and direct repository links.
-4. 🔢 Ensure entries are sorted appropriately by stars or company scale.
+4. 🔢 Ensure entries are sorted appropriately by GitHub_Stars or company scale.
 5. 🚀 Open a Pull Request.
 
 ---
